@@ -16,10 +16,11 @@ namespace Method_3
 
     public class Shape
     {
-        //Shape 类包含两个委托属性，并在构造函数中初始化它们。
+        //Shape 类包含两个委托属性
         public VolumeDelegate Volume { get; set; }
         public SurfaceAreaDelegate SurfaceArea { get; set; }
 
+        //在构造函数中初始化委托
         public Shape(VolumeDelegate volume, SurfaceAreaDelegate surfaceArea)
         {
             Volume = volume;
